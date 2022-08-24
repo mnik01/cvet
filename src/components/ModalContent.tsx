@@ -52,11 +52,10 @@ export const ModalContent: FC<ModalContentProps> = ({
     try {
       const formData = new FormData();
       for (const file of files) {
-        const buffer = await file.arrayBuffer()
-        formData.append(file.name, new Blob([buffer]), file.name);
+        formData.append(file.name, file, file.name);
       }
 
-      const response = await fetch('https://cvet.deno.dev/', {
+      const response = await fetch('https://mnik01-cvet-be.deno.dev/', {
         method: 'POST',
         body: formData,
       });
