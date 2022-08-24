@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-map {
+    @apply bg-[image:url('https://i.ibb.co/Ld8pCCz/image.png')];
+  }
+}
