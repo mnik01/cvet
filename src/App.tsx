@@ -8,7 +8,7 @@ import {
 } from '@mantine/dropzone';
 import { Modal, Button } from '@mantine/core';
 import { useState } from "react"
-
+import mapUrl from './assets/map.png'
 
 export default function App() {
   const [openedModal, setOpenedModal] = useState<null | 'print' | 'prices'>(null)
@@ -135,8 +135,8 @@ export default function App() {
        <Modal
         opened={!!openedModal}
         onClose={() => setOpenedModal(null)}
-        overlayBlur={2}
         withCloseButton={false}
+        transitionDuration={0}
         lockScroll={false}
         classNames={{ modal: 'absolute bottom-0 w-full rounded-t-2xl' }}
       >
@@ -161,7 +161,7 @@ export default function App() {
           <div className="w-full flex flex-col justify-between h-full rounded-lg bg-ui-white p-4 shadow-md">
             <p className="mb-2 text-lg">Где мы находимся?</p>
             <a className="grow pb-2" href="https://go.2gis.com/ui5tl">
-              <div className="bg-map h-full cover rounded-lg bg-center"></div>
+              <div style={{backgroundImage: `url(${mapUrl})`}} className="h-full cover bg-no-repeat rounded-lg bg-center"></div>
             </a>
             <p className="text-sm text-ui-gray">Сибирский тракт, 24г</p>
           </div>
