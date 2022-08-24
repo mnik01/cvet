@@ -9,6 +9,10 @@ import {
 import { Modal, Button } from '@mantine/core';
 import { useState } from "react"
 import mapUrl from './assets/map.png'
+import wordIconPath from './assets/back_word.png'
+import excelIconPath from './assets/back_excel.png'
+import pdfIconPath from './assets/back_pdf.png'
+import rarIconPath from './assets/back_rar.png'
 
 export default function App() {
   const [openedModal, setOpenedModal] = useState<null | 'print' | 'prices'>(null)
@@ -22,6 +26,7 @@ export default function App() {
     ]
 
   const [uploadedFiles, setUploadedFiles] = useState<File[]>([])
+
 
   const modalContent = openedModal === 'print' ? (
     <>
@@ -142,9 +147,15 @@ export default function App() {
       >
         {modalContent}
       </Modal>
-      <div className="flex h-full flex-col justify-between">
+      <div className="flex h-full flex-col justify-between relative overflow-x-clip">
+        <div className="pointer-events-none h-full w-full overflow-clip opacity-30 absolute top-0 left-0">
+          <img className="w-16 h-16 absolute top-32 -left-6 -rotate-12" src={wordIconPath} alt="backgroundImage" />
+          <img className="w-16 h-16 absolute top-48 -right-4 rotate-[8deg]" src={excelIconPath} alt="backgroundImage" />
+          <img className="w-16 h-16 absolute bottom-48 -left-4 rotate-[20deg]" src={pdfIconPath} alt="backgroundImage" />
+          <img className="w-16 h-16 absolute bottom-8 -right-6 -rotate-[15deg]" src={rarIconPath} alt="backgroundImage" />
+        </div>
         <header className="bg-ui-blue p-2 text-center text-xl font-medium text-white md:text-left">Копи-центр</header>
-        <main className="flex gap-4 h-full flex-col justify-between px-4 pt-4">
+        <main className="flex z-10 gap-4 h-full flex-col justify-between px-4 pt-4">
           <div className="w-full rounded-lg bg-ui-white p-4 shadow-md">
             <p>Что мы делаем?</p>
             <ul className="list-inside list-disc text-ui-gray">
