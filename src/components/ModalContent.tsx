@@ -42,8 +42,8 @@ export const ModalContent: FC<ModalContentProps> = ({
   };
 
   const printPrices = {
-    mono: { title: "Чёрно-белая", price: 32 },
-    colored: { title: "Цветная", price: 48 },
+    mono: { title: "Чёрно-белая", price: 5 },
+    colored: { title: "Цветная", price: 25 },
   };
 
   const sendPrintRequestHandler = async () => {

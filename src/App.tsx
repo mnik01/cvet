@@ -50,36 +50,43 @@ export default function App() {
             </div>
             <ul className="mt-4 space-y-2">
               <li className="flex text-md justify-between">
-                <p>Распечатка ч/б</p>
-                <p>20 ₽</p>
+                <p>Распечатка <b className="text-ui-gray text-xs">ч/б</b></p>
+                <p>5 ₽</p>
               </li>
               <li className="flex text-md justify-between">
-                <p>Распечатка цветная</p>
-                <p>45 ₽</p>
+                <p>Распечатка</p>
+                <p>25 ₽</p>
               </li>
               <li className="flex text-md justify-between">
-                <p>Сканирование документа</p>
-                <p>30 ₽</p>
+                <p>Сканирование</p>
+                <p>7 ₽</p>
               </li>
               <li className="flex text-md justify-between">
-                <p>Ксеро-копия ч/б</p>
-                <p>20 ₽</p>
-              </li>
-              <li className="flex text-md justify-between">
-                <p>Ксеро-копия цветная</p>
-                <p>45 ₽</p>
+                <p>Ксеро-копия <b className="text-ui-gray text-xs">ч/б</b></p>
+                <p>7 ₽</p>
               </li>
               <li className="flex text-md justify-between">
                 <p>Ламинирование</p>
-                <p>70 ₽</p>
+                <p>40 ₽</p>
               </li>
               <li className="flex text-md justify-between">
-                <p>Установка защитного стекла на телефон</p>
-                <p>325 ₽</p>
+                <p className="flex gap-1 items-center">
+                  Фото 3x4
+                  <p className="text-xs font-bold text-ui-gray">(4шт)</p>
+                </p>
+                <p>250 ₽</p>
               </li>
               <li className="flex text-md justify-between">
-                <p>Фото 3x4 на паспорт</p>
-                <p>440 ₽</p>
+                <p>Чехлы на телефон</p>
+                <p>240 - 290 ₽</p>
+              </li>
+              <li className="flex text-md justify-between">
+                <p>Зарядки на телефон</p>
+                <p>250 - 500 ₽</p>
+              </li>
+              <li className="flex text-md justify-between">
+                <p>Наушники на телефон</p>
+                <p>250 - 2000 ₽</p>
               </li>
             </ul>
             <p className="font-medium text-sm text-ui-gray text-center mt-4">
@@ -130,9 +137,8 @@ export default function App() {
               <li>Распечатка</li>
               <li>Сканирование</li>
               <li>Ламинат</li>
-              <li>Видео-монтаж</li>
-              <li>Обработка фото</li>
-              <li>Фото 3x4 на паспорт</li>
+              <li>Фото 3x4</li>
+              <li>Печать фото 10x15</li>
               <li>Продажа чехлов, наушников, зарядок на телефон</li>
             </ul>
           </div>
@@ -162,8 +168,8 @@ export default function App() {
           </div>
         </main>
         <footer className="py-3 text-center text-sm text-ui-gray">
-          <p>8-912-236-77-85</p>
-          <p>maksimgrinberg01@gmail.com</p>
+          <p>8-922-136-88-89</p>
+          <p>romanso445@gmail.com</p>
         </footer>
       </div>
     </div>
