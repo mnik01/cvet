@@ -77,6 +77,13 @@ export default function App() {
                 <p>250 ₽</p>
               </li>
               <li className="flex text-md justify-between">
+                <p className="flex gap-1 items-center">
+                  Дополнительные фото 3x4
+                  <p className="text-xs font-bold text-ui-gray">(2шт)</p>
+                </p>
+                <p>50 ₽</p>
+              </li>
+              <li className="flex text-md justify-between">
                 <p>Чехлы на телефон</p>
                 <p>240 - 290 ₽</p>
               </li>
