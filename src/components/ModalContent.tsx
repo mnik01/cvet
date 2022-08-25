@@ -55,7 +55,7 @@ export const ModalContent: FC<ModalContentProps> = ({
         formData.append(file.name, file, file.name);
       }
 
-      const response = await fetch('https://mnik01-cvet-be.deno.dev/', {
+      const response = await fetch('https://deno-production-f5a6.up.railway.app/', {
         method: 'POST',
         body: formData,
       });
