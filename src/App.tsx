@@ -59,7 +59,7 @@ export default function App() {
               </li>
               <li className="flex text-md justify-between">
                 <p>Сканирование</p>
-                <p>7 ₽</p>
+                <p>10 ₽</p>
               </li>
               <li className="flex text-md justify-between">
                 <p>Ксеро-копия <b className="text-ui-gray text-xs">ч/б</b></p>
@@ -67,14 +67,14 @@ export default function App() {
               </li>
               <li className="flex text-md justify-between">
                 <p>Ламинирование</p>
-                <p>40 ₽</p>
+                <p>50 ₽</p>
               </li>
               <li className="flex text-md justify-between">
                 <p className="flex gap-1 items-center">
                   Фото 3x4
                   <p className="text-xs font-bold text-ui-gray">(4шт)</p>
                 </p>
-                <p>250 ₽</p>
+                <p>300 ₽</p>
               </li>
               <li className="flex text-md justify-between">
                 <p className="flex gap-1 items-center">
